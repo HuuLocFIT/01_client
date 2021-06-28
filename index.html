@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+
+    <style>
+        .login_form {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #c4c4c4;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #0000;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .input_box {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .input_box input {
+            padding: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .input_box label {
+            color: #000;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .btn_box button {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: #10e67b;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="login_form">
+                <form action="http://127.0.0.1:5500" method="post">
+                    <h1>Login Form</h1>
+                    <div class="input_box">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" id="Username" name="Username" placeholder="Enter Username"><br><br>
+                    </div>
+
+                    <div class="input_box">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" id="Password" name="Password" placeholder="Enter Password"><br><br>
+                    </div>
+
+                    <div class="btn_box">
+                        <button type="submit">
+                            Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
